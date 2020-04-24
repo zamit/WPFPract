@@ -1,0 +1,22 @@
+﻿<Window x:Class="PraktWPF.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PraktWPF"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="784">
+            <MenuItem Header="Клиенты" Click="MenuItem_Click_1"></MenuItem>
+            <MenuItem Header="Товар" ></MenuItem>
+            <MenuItem Header="Заказы" ></MenuItem>
+            <MenuItem Header="Выход" Click="MenuItem_Click"></MenuItem>
+
+        </Menu>
+              
+              
+             
+
+    </Grid>
+</Window>

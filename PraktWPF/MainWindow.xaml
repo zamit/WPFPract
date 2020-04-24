@@ -1,0 +1,25 @@
+﻿<Window x:Class="PraktWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PraktWPF"
+        mc:Ignorable="d"
+        Title="Окно клиентов" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="354" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding idklient}" Width="50"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding name}" Width="250"/>
+                <DataGridTextColumn Header="Тип" Binding="{Binding tip}" Width="250"/>
+                <DataGridTextColumn Header="адрес" Binding="{Binding adres}" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,369,0,0" VerticalAlignment="Top" Width="123" Height="41" Click="Button_Click_2"/>
+        <Button Content="Редактировать" HorizontalAlignment="Left" Margin="157,369,0,0" VerticalAlignment="Top" Width="123" Height="41" Click="Button_Click_3"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="320,369,0,0" VerticalAlignment="Top" Width="123" Height="41" Click="Button_Click_1"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="508,369,0,0" VerticalAlignment="Top" Width="123" Height="41" Click="Button_Click"/>
+
+    </Grid>
+</Window>
